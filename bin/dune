@@ -1,0 +1,4 @@
+(executable
+ (public_name sha256-cng)
+ (name main)
+ (libraries sha256_cng))
