@@ -1,2 +1,9 @@
-(library
- (name sha256_cng))
+ (library
+  (name sha256_cng)
+  (public_name sha256-cng)
+  (libraries unix)
+  (foreign_stubs
+   (language c)
+   (names sha256_cng_ext)
+   (flags :standard))
+  (c_library_flags (-lbcrypt)))

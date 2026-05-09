@@ -1,4 +1,9 @@
 (executable
- (public_name sha256-cng)
  (name main)
+ (public_name sha256-cng)
  (libraries sha256_cng))
+
+(rule
+ (targets version.ml)
+ (action
+  (write-file version.ml "let version = \"%{version:sha256-cng}\"")))

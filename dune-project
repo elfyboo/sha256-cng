@@ -5,22 +5,27 @@
 (generate_opam_files true)
 
 (source
- (github username/reponame))
+ (github elfyboo/sha256-cng))
 
-(authors "Author Name <author@example.com>")
+(authors "elfyboo" <elfyboo.mail@gmail.com>)
 
-(maintainers "Maintainer Name <maintainer@example.com>")
+(maintainers "elfyboo" <elfyboo.mail@gmail.com>)
 
-(license LICENSE)
+(license Unlicense)
 
-(documentation https://url/to/documentation)
+(documentation https://github.com/elfyboo/sha256-cng)
 
 (package
  (name sha256-cng)
- (synopsis "A short synopsis")
- (description "A longer description")
- (depends ocaml)
+ (version "0.1.0")
+ (synopsis "SHA-256 hashing for OCaml on Windows via native CNG")
+ (description
+  "Thin FFI bindings over the Windows CNG (BCrypt) API for computing SHA-256 hashes of files and strings. No dependencies beyond the Windows SDK.")
+ (depends
+  (ocaml
+   (>= 4.08))
+  (dune
+   (>= 3.22))
+  (alcotest :with-test))
  (tags
-  ("add topics" "to describe" your project)))
-
-; See the complete stanza docs at https://dune.readthedocs.io/en/stable/reference/dune-project/index.html
+  (sha256 windows cng bcrypt)))
