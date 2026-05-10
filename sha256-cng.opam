@@ -12,7 +12,7 @@ homepage: "https://github.com/elfyboo/sha256-cng"
 doc: "https://github.com/elfyboo/sha256-cng"
 bug-reports: "https://github.com/elfyboo/sha256-cng/issues"
 depends: [
-  "ocaml" {>= "4.08"}
+  "ocaml" {>= "4.13"}
   "dune" {>= "3.22" & >= "3.22"}
   "alcotest" {with-test}
   "odoc" {with-doc}

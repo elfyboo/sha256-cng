@@ -44,7 +44,7 @@ sha256-cng -h | --help
 ## Requirements
 
 - Windows
-- OCaml >= 4.08
+- OCaml >= 4.13
 - dune >= 3.22
 
 ## Testing

@@ -23,7 +23,7 @@
   "Thin FFI bindings over the Windows CNG (BCrypt) API for computing SHA-256 hashes of files and strings. No dependencies beyond the Windows SDK.")
  (depends
   (ocaml
-   (>= 4.08))
+   (>= 4.13))
   (dune
    (>= 3.22))
   (alcotest :with-test))
