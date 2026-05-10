@@ -33,3 +33,4 @@ build: [
 ]
 dev-repo: "git+https://github.com/elfyboo/sha256-cng.git"
 x-maintenance-intent: ["(latest)"]
+available: [os = "win32"]
