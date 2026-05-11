@@ -47,6 +47,13 @@ sha256-cng -h | --help
 - OCaml >= 4.13
 - dune >= 3.22
 
+## Installation
+sha256 can be installed from the official opam-repository.
+
+```bash
+opam install sha256-cng
+```
+
 ## Testing
 
 ```bash
